@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: m165437 # nice!view custom
+      url-base: https://github.com/M165437 # nice!view custom
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: nice-view-gem # nice!view custom
+      remote: m165437 # nice!view custom
+      revision: main # nice!view custom
   self:
     path: config
